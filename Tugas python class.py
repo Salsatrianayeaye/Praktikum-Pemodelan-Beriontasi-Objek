@@ -24,8 +24,8 @@ print("Tahun angkatan saya adalah", saya.angkatan)
 
 saya = Mahasiswa("Salsa", "2207002", 19, "2022")
 print(saya)
-Nama saya adalah Salsa
-NIM saya adalah 2207002
-Tahun lahir saya adalah 2004
-Tahun angkatan saya adalah 2022
-Nama saya adalah Salsa, dan NIM saya adalah 2207002
+#Nama saya adalah Salsa
+#NIM saya adalah 2207002
+#Tahun lahir saya adalah 2004
+#Tahun angkatan saya adalah 2022
+#Nama saya adalah Salsa, dan NIM saya adalah 2207002
