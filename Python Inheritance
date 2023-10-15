@@ -1,0 +1,38 @@
+# Praktikum-Pemodelan-Beriontasi-Objek
+Tugas Praktikum Pemodelan Berontasi Objek
+class Orang():
+    def __init__(self, firstName, lastName):
+        self.firstName = firstName
+        self.lastName = lastName
+    
+    def getFirstName(self):
+        return self.firstName
+    
+    def getLastName(self):
+        return self.lastName
+
+class Alamat():
+    def __init__(self):
+        self.jalan = "Jl Cimanuk"
+        self.kota = "Garut"
+
+class Mahasiswa(Orang, Alamat):
+    def __init__(self, firstName, lastName, nim):
+        self.nim = nim
+
+        Orang.__init__(self, firstName, lastName)
+        Alamat.__init__(self)
+    
+    def __str__(self):
+        return f"{self.firstName} {self.lastName} {self.nim}"
+    
+    def printData(self):
+        print(f"Nama: {self.getFirstName()} {self.lastName}")
+        print(f"NIM: {self.nim}")
+        print(f"Alamat: {self.jalan}, {self.kota}")
+
+mhs = Mahasiswa("Salsabilah", "Triana", "2207002")
+mhs.printData()
+Nama: Salsabilah Triana
+NIM: 2207002
+Alamat: Jl Cimanuk, Garut
